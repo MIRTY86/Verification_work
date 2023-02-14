@@ -2,6 +2,10 @@
 string[] myArray2 = { "knowledge", "is", "priceless", "baggage", ":=)" };
 string[] myArray3 = { "patience", "and", "a", "little", "effort" };
 
+
+
+
+
 bool CharacterCountCheck(string element)
 {
     char[] num = element.ToCharArray();
@@ -25,12 +29,12 @@ string[] FormNewArray(string[] array, int elemment)
     for (int i = 0; i < array.Length; i++)
     {
         int k = 0;
-        if(CharacterCountCheck(array[i])) 
+        if (CharacterCountCheck(array[i]))
         {
             newArray[k] = array[i];
             k++;
         }
-        return newArray;
     }
-
+    return newArray;
 }
+
