@@ -9,3 +9,13 @@ bool CharacterCountCheck(string element)
     return true;
 }
 
+int CountElements(string[] arr)
+{
+    int countElement = 0;   
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(CharacterCountCheck(arr[i])) countElement++;
+    }
+    return countElement;
+}
+
