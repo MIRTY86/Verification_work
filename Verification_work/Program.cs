@@ -10,7 +10,7 @@ void ResultOutput(string[] array)
 {
     int res = CountElements(array);
     string[] newarr = FormNewArray(array, res);
-    Console.WriteLine("[" + String.Join(",", array) + "] --> " + "[" + String.Join(",", newarr) + "]");
+    Console.WriteLine("[" + String.Join(", ", array) + "] --> " + "[" + String.Join(", ", newarr) + "]");
 }
 
 bool CharacterCountCheck(string element)
@@ -44,4 +44,3 @@ string[] FormNewArray(string[] array, int elemment)
     }
     return newArray;
 }
-
