@@ -11,11 +11,26 @@ bool CharacterCountCheck(string element)
 
 int CountElements(string[] arr)
 {
-    int countElement = 0;   
+    int countElement = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if(CharacterCountCheck(arr[i])) countElement++;
+        if (CharacterCountCheck(arr[i])) countElement++;
     }
     return countElement;
 }
 
+string[] FormNewArray(string[] array, int elemment)
+{
+    string[] newArray = new string[elemment];
+    for (int i = 0; i < array.Length; i++)
+    {
+        int k = 0;
+        if(CharacterCountCheck(array[i])) 
+        {
+            newArray[k] = array[i];
+            k++;
+        }
+        return newArray;
+    }
+
+}
